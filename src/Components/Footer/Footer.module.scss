@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.footer {
+    width: 100%;
+    min-height: 350px;
+    background-image: url(https://preview.colorlib.com/theme/robotics/img/footer-bg.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        color: white;
+
+        a {
+            text-decoration: none;
+        }
+    }
+}

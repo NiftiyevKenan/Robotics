@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    min-height: 70px;
+    background-color: #CD95FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    position: fixed;
+
+    .container {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            width: 50%;
+        }
+
+        .navbar {
+            width: 45%;
+
+            ul {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+
+                li {
+                    list-style: none;
+
+                    a {
+                        text-decoration: none;
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        .bars {
+            width: 5%;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width:1200px) and (max-width:1400px) {
+    .header {
+        .container {
+            width: 95%;
+            .logo {
+                width: 45%;
+            }
+
+            .navbar {
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1200px) {
+    .header {
+        .container {
+            width: 95%;
+            .logo {
+                width: 35%;
+            }
+
+            .navbar {
+                width: 60%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    .header {
+        .container {
+            width: 95%;
+
+            .logo {
+                width: 45%;
+            }
+
+            .navbar {
+                width: 50%;
+                display: none;
+            }
+
+            .bars {
+                display: block;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:768px) {
+    .header {
+        .container {
+            width: 95%;
+
+            .logo {
+                width: 45%;
+            }
+
+            .navbar {
+                width: 50%;
+                display: none;
+            }
+
+            .bars {
+                display: block;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:576px) {
+    .header {
+        .container {
+            width: 95%;
+
+            .logo {
+                width: 45%;
+            }
+
+            .navbar {
+                width: 45%;
+                display: none;
+            }
+
+            .bars {
+                width: 10%;
+                display: block;
+            }
+        }
+    }
+}

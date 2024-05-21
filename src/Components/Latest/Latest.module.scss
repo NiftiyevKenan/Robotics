@@ -1,0 +1,200 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.page {
+    width: 100%;
+    min-height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+
+        .top {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+            p {
+                font-size: 15px;
+            }
+        }
+
+        .bottom {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .card {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: start;
+                gap: 20px;
+
+                img {
+                    width: 90%;
+                }
+
+                .btn {
+                    width: 100%;
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    gap: 20px;
+
+                    button {
+                        width: 20%;
+                        background-color: #BC94FF;
+                        border-radius: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width:1200px) and (max-width:1400px) {
+    .page {
+        .container {
+            margin-top: 40px;
+            width: 80%;
+            margin-bottom: 30px;
+
+            .bottom {
+                .card {
+
+                    span {
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1200px) {
+    .page {
+        .container {
+            margin-top: 40px;
+            width: 95%;
+            margin-bottom: 30px;
+
+            .bottom {
+                .card {
+
+                    span {
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    .page {
+        .container {
+            margin-top: 40px;
+            width: 95%;
+            margin-bottom: 30px;
+
+            .bottom {
+                .card {
+                    .btn {
+                        button {
+                            width: 30%;
+                        }
+                    }
+
+                    span {
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:768px) {
+    .page {
+        .container {
+            margin-top: 40px;
+            width: 95%;
+            margin-bottom: 30px;
+
+            .bottom {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+
+                .card {
+                    width: 100%;
+
+                    .btn {
+                        button {
+                            width: 30%;
+                        }
+                    }
+
+                    span {
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:576px) {
+    .page {
+        .container {
+            margin-top: 40px;
+            width: 95%;
+            margin-bottom: 30px;
+
+            .top {
+                text-align: center;
+            }
+
+            .bottom {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+
+                .card {
+                    width: 100%;
+
+                    .btn {
+                        button {
+                            width: 30%;
+                        }
+                    }
+
+                    span {
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+}
